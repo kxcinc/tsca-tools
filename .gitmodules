@@ -1,0 +1,3 @@
+[submodule "vendors/tezos"]
+	path = vendors/tezos
+	url = https://github.com/kxcteam/tsca-tezos.git

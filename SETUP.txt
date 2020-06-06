@@ -1,0 +1,7 @@
+the recommended way to setup is to execute in sequence:
+$ make build-deps
+$ make install-tezos-packages
+
+you could optionally build the tezos source files to enhance source
+code browsing experiences by executing:
+$ make build-tezos-src
