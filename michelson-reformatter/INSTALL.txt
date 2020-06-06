@@ -1,0 +1,7 @@
+to install this utility, execute in sequence:
+$ dune build @install
+$ opam install -y ./*.opam
+
+after successful installation, this utility will be accessible as
+$ michelson-reformat
+under the installed opam switch

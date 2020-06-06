@@ -1,0 +1,15 @@
+(lang dune 2.5)
+(name kxctsca-michelson-reformatter)
+
+(source (github kxcteam/tsca-tools))
+(license MIT)
+(authors "Haochen Xie")
+(maintainers "Haochen Xie <hx@kxc.io>")
+
+(generate_opam_files true)
+(package
+ (name kxctsca-michelson-reformatter)
+ (synopsis "A utility to reformat Tezos Michelson source code")
+ (depends
+  (dune (> 2.0))
+  (tezos-client-006-PsCARTHA :build)))

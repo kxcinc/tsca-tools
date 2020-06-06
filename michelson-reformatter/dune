@@ -1,0 +1,5 @@
+(executable
+ (name michelson_reformatter)
+ (public_name michelson-reformat)
+ (libraries tezos-client-006-PsCARTHA)
+ (flags (:standard -open Tezos_base__TzPervasives)))
