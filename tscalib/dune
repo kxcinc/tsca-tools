@@ -1,0 +1,16 @@
+(library
+ (name tscalibs)
+ (public_name kxc-tscalib)
+ (wrapped false)
+ (libraries
+   tezos-client-006-PsCARTHA
+   tezos-protocol-006-PsCARTHA
+   tezos-client-base-unix
+   tezos-client-commands
+   tezos-storage
+   tezos-shell-context
+   tezos-006-PsCARTHA-test-helpers
+   lwt.unix
+   kxclib)
+ (flags (:standard
+          -open Kxclib)))
