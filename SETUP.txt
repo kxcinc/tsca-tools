@@ -1,4 +1,6 @@
 the recommended way to setup is to execute in sequence:
+$ git submodule init
+$ git submodule update
 $ make build-deps
 $ make install-tezos-packages
 
