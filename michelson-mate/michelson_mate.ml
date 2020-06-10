@@ -182,7 +182,7 @@ let commands =
     command ~group ~desc:"reformat a Michelson contract"
       no_options
       (prefix "reformat"
-       @@ (string ~name:"path|-" ~desc:"path to the contract file")
+       @@ (string ~name:"path|-" ~desc:"path to the Michelson code")
        @@ stop)
       (fun () tzfile (cctx : Client_context.full) ->
         slurp tzfile
@@ -211,7 +211,7 @@ let commands =
       )
   in
   let unpack =
-    command ~group ~desc:"pack a Michelson value"
+    command ~group ~desc:"unpack a Michelson value"
       (args1 type_arg)
       (prefix "unpack"
        @@ (bytes_parameter
@@ -229,7 +229,7 @@ let commands =
       )
   in
   let typecheck_script =
-    command ~group ~desc:"pack a Michelson value"
+    command ~group ~desc:"typecheck a Michelson contract"
       no_options
       (prefixes ["typecheck"; "script"]
        @@ (string ~name:"path|-" ~desc:"path to the contract file")
