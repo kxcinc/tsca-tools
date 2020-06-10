@@ -1,0 +1,8 @@
+try the following to install:
+$ opam switch 4.09.1
+$ opam install -y ./kxc-michelson-mate.opam \
+    ./vendors/tezos-006-PsCARTHA-test-helpers/tezos-006-PsCARTHA-test-helpers.opam
+
+if successful, the following binaries should be installed
+- mm
+- michelson-mate (the same as `mm`)
